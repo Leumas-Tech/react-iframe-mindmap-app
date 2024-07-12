@@ -1,0 +1,68 @@
+/* src/App.css */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .tab-controls {
+    margin-bottom: 20px;
+  }
+  
+  .mindmap-area {
+    width: 100%;
+    height: 80vh;
+    border: 1px solid #ccc;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .tab {
+    border: 1px solid #ccc;
+    position: absolute;
+    overflow: hidden;
+    cursor: grab;
+  }
+  
+  .tab:active {
+    cursor: grabbing;
+  }
+  
+  .tab-header {
+    background: #f0f0f0;
+    padding: 5px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .tab iframe {
+    width: 100%;
+    height: calc(100% - 20px);
+    border: none;
+  }
+  
+  .close-button {
+    background: #ff5c5c;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .resize-handle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #333;
+    cursor: se-resize;
+  }
+  
